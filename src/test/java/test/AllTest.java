@@ -46,10 +46,8 @@ public class AllTest {
 		driver.findElement(By.name("categorydata")).sendKeys("AbCd");
 		driver.findElement(By.cssSelector("input[value='Add category']")).click();
 
-		// Validate a user is not able to add a duplicated category. If it does then the
-		// following message
-		// will display:"The category you want to add already exists: <duplicated
-		// category name>."
+// Validate a user is not able to add a duplicated category. If it does then the following message
+//will display:"The category you want to add already exists: <duplicated category name>."
 
 		driver.findElement(By.name("categorydata")).sendKeys("AbC");
 		driver.findElement(By.cssSelector("input[value='Add category']")).click();

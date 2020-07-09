@@ -23,6 +23,7 @@ public class CategoryTest {
 		CategoryPage AddCategoryButton = PageFactory.initElements(driver, CategoryPage.class);
 
 		AddCategoryButton.ClickAddCategoryButton();
+		
 	}
 
 	@AfterTest

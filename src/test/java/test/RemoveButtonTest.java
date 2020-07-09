@@ -1,7 +1,10 @@
 package test;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -23,13 +26,28 @@ public class RemoveButtonTest {
 		RemoveButtonPage RemoveButton = PageFactory.initElements(driver, RemoveButtonPage.class);
 
 		RemoveButton.ClickRemoveButton();
-	}
-	@AfterTest
-	public void tearDown() {
-	
-		driver.close();
-		driver.quit();
 
+//		WebElement singleCheckBoxChecked = driver.findElement(By.name("submit"));
+//		System.out.println("Single List Item is removed when single check box is SELECTED -" + singleCheckBoxChecked.isSelected());
+
+//		String singleCheckBoxChecked = driver.findElement(By.name("submit")).getText();
+//		Assert.assertEquals("Remove", singleCheckBoxChecked, "Single item Removed!!!");
+//
+//		boolean status = driver.findElement(By.name("submit")).isSelected();
+//		
+//		if(status){
+//			System.out.println("Single Checkbox is checked");
+//		} else {
+//			System.out.println("Single Checkbox is removed");
+//		}
+//	}
+
+//	@AfterTest
+//	public void tearDown() {
+//
+//		driver.close();
+//		driver.quit();
+//
+//	}
 }
-
 }

@@ -13,7 +13,7 @@ public class RemoveButtonPage {
 			this.driver = driver;
 		}
 
-		@FindBy(how = How.NAME, using = "todo[5]") WebElement SINGLE_CHECK_BOX_LOCATOR;
+		@FindBy(how = How.NAME, using = "todo[4]") WebElement SINGLE_CHECK_BOX_LOCATOR;
 		@FindBy(how = How.NAME, using = "submit") WebElement REMOVE_BUTTON_LOCATOR;
 
 		public void ClickSingleCheckBox() {
